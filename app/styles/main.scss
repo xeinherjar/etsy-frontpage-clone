@@ -40,13 +40,41 @@ a {
 .side-bar {
   float: left;
   margin: 0 auto;
+  width: 222px;
+  margin-right: 25px;
+  border-radius: 3px;
 }
 
+.side-bar-header {
+  padding-bottom: 14px;
+}
+
+
+
 .side-bar-content {
+  font-size: 13px;
   background-color: white;
 
   .item-type > ul, .category {
     list-style-type: none;
+    color: red;
+    margin-left: 0px;
+    padding-left: 0px;
+ 
+  }
+
+  .category {
+   
+    li { 
+    padding-left: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+    }
+
+    li:first-child {
+      color: green;
+      padding-left: 10px;
+    }
   }
 }
 
@@ -57,6 +85,7 @@ a {
 }
 
 .results-header {
+  padding-bottom: 14px;
    div {
     float: right;
     margin-right: 15px;
@@ -87,6 +116,7 @@ a {
     background-color: white;
     text-align: center;
     margin: 5px;
+    margin-bottom: 20px;
     padding: 5px;
     padding-bottom: 10px;
     width: 222px;
