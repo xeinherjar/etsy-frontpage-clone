@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>009</title>
+    <title>HW 009 - ETSY</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -23,20 +23,71 @@
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>Bourbon & Neat</li>
-        <li>UnderscoreJS</li>
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+<div class="page-container">
+  <div class="header">
+    <div class="logo">
+    <a href="#">Etsy</a>
     </div>
 
+
+
+  </div> <!--header-->
+  <div class="content">
+    <div class="side-bar">
+      <div class="side-bar-header">
+        Show results for:
+      </div><!--side-bar-header-->
+      <div class="side-bar-content">
+        <div class="item-type">
+          <span>Item Type:</span>
+          <ul>
+            <li>
+          <input type="radio" name="item" id="allItems" value="All Items" checked>
+          <label for="allItems">All Items</label>
+            </li>
+            <li>
+          <input type="radio" name="item" id="handmade" value="Handmade">
+          <label for="handmade">Handmade</label>
+            </li>
+            <li>
+          <input type="radio" name="item" id="vintage" value="Vintage">
+          <label for="handmade">Handmade</label>
+            </li>
+            <li>
+          <input type="radio" name="item" id="craftSupplies" value="Craft Supplies">
+          <label for="craftSupplies">Craft Supplies</label>
+            </li>
+          </ul>
+          </div> <!--item-type-->
+      <span>Categories</span>
+      <ul class="category">
+        <li>Handmade</li>
+        <li>Handmade</li>
+        <li>Handmade</li>
+        <li>Handmade</li>
+        <li>Handmade</li>
+      </ul>
+      </div> <!--side-bar-content-->
+    </div> <!--side-bar-->
+
+    <div class="results">
+      <div class="results-header">
+        <span>"nintendo" We found 1,000 items!</span>
+        <div>Sort by: <span>Relaventcy</span></div>
+      </div>
+      <div class="results-content">
+
+      </div> <!--results-content-->
+      <div class="related">
+      </div> <!--related-->
+    </div> <!--results-->
+  </div> <!--content-->
+
+  <div class="footer">
+  </div> <!--footer-->
+
+
+</div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -45,6 +96,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/etsy.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
