@@ -4,12 +4,15 @@
 
 // Custom Styles
 $text-color: RGB(102, 102, 102);
-$side-bar-text-color: RGB(1, 146, 181);
+$link-color: RGB(1, 146, 181);
 $body-color: RGB(245, 245, 241);
+$price-color: RGB(120, 192, 66);
+
 body {
   background: $body-color;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  color: $text-color;
+  font-size: 12px;
 }
 
 .page-container {
@@ -27,7 +30,7 @@ body {
 .content {
   overflow: auto;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .side-bar {
@@ -50,5 +53,63 @@ body {
 }
 
 .results-header {
+   div {
+    float: right;
+  }
+}
+
+.results-content {
+  margin: 0 auto;
+
+  .listing {
+    float: left;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 222px;
+    border-radius: 2%;
+
+    > .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+
+    > img {
+      //width: 135px;
+      height: 170px;
+    }
+  
+    .listing-footer {
+      span:first-child {
+        float: left;
+        color: RGB(178, 178, 178);
+      }
+      span:last-child {
+        color: $price-color;
+        float: right;
+      }
+    }
+  
+  
+  }
+
+  .listing:nth-child(3n + 1) {
+    clear: left;
+  }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
