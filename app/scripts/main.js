@@ -19,7 +19,7 @@ etsyItems.results.forEach( function(x) {
       p_sign = "$";
       break;
     case "GBP":
-      p_sign = "L";
+      p_sign = "£";
       break;
     default:
       p_sign: "$";
