@@ -64,6 +64,8 @@ a {
     input[type="radio"]:checked + label {
      color: $text-color;
      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
     }
 
     label {
@@ -71,7 +73,7 @@ a {
 
       &:hover {
         text-decoration: underline;
-        cursor: pointer;
+        cursor: text;
       }
     }
 
@@ -133,6 +135,7 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     border-bottom: 1px solid lightgray;
+    position: relative;
 
     input[type="text"] {
      width: 61px;
@@ -141,7 +144,35 @@ a {
      margin-bottom: 20px;
      text-align: center;
      font-weight: bold; 
-     
+     border-radius: 3px;
+     border: 1px solid lightgray;
+    }
+
+    .go {
+      width: 34px;
+      height: 34px;
+      display: inline-block;
+      background-color: RGB(235, 235, 234);
+      border-radius: 3px;
+      border: 1px solid lightgray;
+      margin-top: 10px;
+      float: right;
+
+      &:hover {
+        background-color: lightgray;
+      }
+      
+      &:after {
+        position: absolute;
+        top: 38px;
+        left: 160px;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent RGB(125, 119, 115);
+      }
     }
   }
 
@@ -156,20 +187,21 @@ a {
       margin-right: 4px;
       border-radius: 3px;
     }
-
-    > div:nth-child(1) { background-color: red; }
-    > div:nth-child(2) { background-color: orange; }
-    > div:nth-child(3) { background-color: yellow; }
-    > div:nth-child(4) { background-color: green; }
-    > div:nth-child(5) { background-color: blue; }
-    > div:nth-child(6) { background-color: purple; }
-    > div:nth-child(7) { background-color: black; }
-    > div:nth-child(8) { background-color: white; }
+    > span { margin-bottom: 10px; }
+    > div:nth-child(2) { background-color: red; }
+    > div:nth-child(3) { background-color: orange; }
+    > div:nth-child(4) { background-color: yellow; }
+    > div:nth-child(5) { background-color: green; }
+    > div:nth-child(6) { background-color: blue; }
+    > div:nth-child(7) { background-color: purple; }
+    > div:nth-child(8) { background-color: black; }
+    > div:nth-child(9) { background-color: white; }
   }
 
   .ordering-options {
     margin: 14px;
     border-bottom: 1px solid lightgray;
+
     div {
       margin-bottom: 5px;
       margin-top: 10px;
@@ -182,13 +214,41 @@ a {
 
     input[type="checkbox"] {
       vertical-align: middle;
-      transform: scale(1.5);
     }
     > label {
       margin-left: 5px;
     }
   }
 
+  .shop-location {
+    margin: 14px;
+    > div {
+      margin: 10px 0;
+
+      label {
+        margin-left: 5px;
+      }
+    }
+    border-bottom: 1px solid lightgray;
+  }
+
+  .ships-to {
+    margin: 14px;
+    span {
+      float: left; 
+      margin-bottom: 10px;
+    }
+    a {
+      float: right;
+      display: block;
+    }
+
+    select {
+      clear: both;
+      display: block;
+      width: 190px;
+    }
+  }
 
 }
 
@@ -249,6 +309,7 @@ a {
     text-overflow: ellipsis;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: left;
     }
 
 
