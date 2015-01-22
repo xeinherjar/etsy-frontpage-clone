@@ -8,6 +8,11 @@ $link-color: RGB(1, 146, 181);
 $body-color: RGB(245, 245, 241);
 $price-color: RGB(120, 192, 66);
 
+.hidden {
+  display: none;
+}
+
+
 body {
   background: $body-color;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -94,7 +99,7 @@ a {
 
       &:hover {
         border: 1px solid gray;
-
+      
         &:after{
           border-color: gray transparent transparent transparent;
         }
@@ -111,8 +116,35 @@ a {
         border-width: 6px 3px 0 3px;
         border-color: RGB(203, 204, 201) transparent transparent transparent;
       } 
+
+      .h-menu {
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        
+        a {
+            text-decoration: none;
+            li {
+              color: $text-color;
+              padding: 10px;
+
+            &:hover {
+              background-color: lightblue;
+              color: $link-color;
+            }
+          }
+        }
+      }
+
     }
- 
+
+
   .right {
     float: right;
     margin-top: 10px;
