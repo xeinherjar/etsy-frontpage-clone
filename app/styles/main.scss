@@ -28,12 +28,82 @@ a {
   margin: 0 auto;
   overflow: auto;
 }
-
-.header {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  height: 75px;
+.outside-header {
   background-color: white;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+.header {
+  margin: 0 auto 10px;
+  height: 75px;
+  width: 1000px;
+  background-color: white;
+
+  .logo {
+    display: inline-block;
+    margin: 25px auto;
+    vertical-align: middle; 
+    a img {
+      width: 75px;
+    }
+  }
+  .left {
+    float: left;
+  }
+  .search {
+    margin-left: 25px;
+    display: inline-block;
+    input[type="textbox"] {
+      height: 34px;
+      width: 260px;
+      margin-top: 25px;
+      border: 1px solid RGB(102, 183, 209);
+      border-radius: 3px;
+      margin-right: 0;
+      padding-top: 0px;
+      padding-left: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-left: -5px;
+      margin-top: -1px;
+      height: 34px;
+      width: 82px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: RGB(102, 183, 209);
+      border: 1px solid RGB(102, 183, 209);
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  .right {
+    float: right;
+    margin-top: 10px;
+    margin-right: 55px;
+    ul li {
+      list-style: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  .sign-in {
+    border: 1px solid $link-color;
+    border-radius: 3px;
+    padding: 10px;
+
+    &:hover {
+      background-color: RGB(240, 251, 253);
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .content {
