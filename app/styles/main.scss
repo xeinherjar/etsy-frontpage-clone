@@ -52,7 +52,6 @@ a {
 }
 
 @mixin li-spacing() {
-    //padding-left: 20px;
     margin: 0;
     padding-bottom: 8px;
 }
@@ -60,20 +59,34 @@ a {
 .side-bar-content {
   font-size: 13px;
   background-color: white;
+  overflow: auto;
+
+  > div > span {
+    font-weight: bold;
+    display: block;
+  }
 
   .item-type {
     margin: 0 20px 10px 20px;
     border-bottom: 1px solid lightgray;
     padding-top: 10px;
-
+     
     > ul > li {
       @include li-spacing();
+
+      > label {
+        margin-left: 5px;
+      }
     }
   }
-  
+ 
+    input[type="radio"]:checked + label > a {
+     color: $text-color;
+     font-weight: bold;
+    }
+
   .item-type > ul, .category {
     list-style-type: none;
-    color: red;
     margin-left: 0px;
     padding-left: 0px;
  
@@ -81,20 +94,62 @@ a {
 
   .side-cats {
     padding-left: 20px;
+
+    > span {
+      font-weight: bold;
+    }
   }
 
   .category {
+    margin-left: 0px;
+    margin-right: 20px;
+
     li { 
       @include li-spacing();
       padding-left: 10px;
    }
 
     li:first-child {
-      color: green;
+      font-weight: bold;
       padding-left: 0;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid lightgray;
+    }
+  }
+
+  .price-filter {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid lightgray;
+
+    input[type="text"] {
+     width: 61px;
+     height: 34px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     text-align: center;
+     font-weight: bold; 
+    }
+  }
+
+  .color-filter {
+    margin: 14px 14px 14px 14px;
+    overflow: auto;
+    > div {
+      width: 20px;
+      height: 20px;
+      border: 1px solid lightgray;
+      float: left;
+      margin-right: 4px;
+      border-radius: 3px;
+
     }
   }
 }
+
+
 
 
 .results {
