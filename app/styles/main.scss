@@ -35,7 +35,7 @@ a {
 .content {
   overflow: auto;
   margin: 0 auto;
-  width: 90%;
+  width: 1000px;
 }
 
 .side-bar {
@@ -61,6 +61,21 @@ a {
   background-color: white;
   overflow: auto;
 
+    input[type="radio"]:checked + label {
+     color: $text-color;
+     font-weight: bold;
+    }
+
+    label {
+      color: $link-color;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+
   > div > span {
     font-weight: bold;
     display: block;
@@ -80,11 +95,6 @@ a {
     }
   }
  
-    input[type="radio"]:checked + label > a {
-     color: $text-color;
-     font-weight: bold;
-    }
-
   .item-type > ul, .category {
     list-style-type: none;
     margin-left: 0px;
@@ -131,6 +141,7 @@ a {
      margin-bottom: 20px;
      text-align: center;
      font-weight: bold; 
+     
     }
   }
 
@@ -177,6 +188,8 @@ a {
       margin-left: 5px;
     }
   }
+
+
 }
 
 
