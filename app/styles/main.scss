@@ -18,6 +18,10 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .page-container {
@@ -273,6 +277,7 @@ a {
 
 
   div > a {
+    text-decoration: none;
     position: relative;
   }
   
@@ -303,6 +308,13 @@ a {
     width: 222px;
     border-radius: 3px;
 
+    &:hover {
+      border-color:#DDD;
+      border-bottom-color:#BBB;
+      box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+      text-decoration:none;
+    }
+
     > .title {
     white-space: nowrap;
     overflow: hidden;
@@ -310,10 +322,14 @@ a {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
+
+      a {
+        color: $text-color;
+      }
     }
 
 
-    > img {
+    > a img {
       height: 170px;
     }
   
@@ -321,6 +337,9 @@ a {
       span:first-child {
         float: left;
         color: RGB(178, 178, 178);
+        a {
+          color: RGB(178, 178, 178);
+        }
       }
       span:last-child {
         color: $price-color;
