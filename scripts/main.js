@@ -40,3 +40,10 @@ etsyItems.results.forEach( function(x) {
 
   rc.append(el);
 });
+
+
+$('.browse').on('click', function() {
+  var h_menu = $('.h-menu');
+  h_menu.hasClass('hidden') ? h_menu.removeClass('hidden') : 
+                              h_menu.addClass('hidden');
+});
