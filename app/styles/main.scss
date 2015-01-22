@@ -77,8 +77,42 @@ a {
       color: white;
       font-size: 16px;
     }
-  }
+ }
 
+    .browse {
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      padding: 10px;
+      margin-left: 16px;
+      display: inline-block;
+      background-color: white;
+      width: 79px;
+      height: 34px;
+      font-size: 14px;
+      line-height: 12px;
+      position: relative;
+
+      &:hover {
+        border: 1px solid gray;
+
+        &:after{
+          border-color: gray transparent transparent transparent;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        top: 13px;
+        left: 62px;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 3px 0 3px;
+        border-color: RGB(203, 204, 201) transparent transparent transparent;
+      } 
+    }
+ 
   .right {
     float: right;
     margin-top: 10px;
