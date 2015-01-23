@@ -47,3 +47,4 @@ $('.browse').on('click', function() {
   h_menu.hasClass('hidden') ? h_menu.removeClass('hidden') : 
                               h_menu.addClass('hidden');
 });
+
