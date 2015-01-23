@@ -99,6 +99,7 @@ a {
 
       &:hover {
         border: 1px solid gray;
+        cursor: pointer;
       
         &:after{
           border-color: gray transparent transparent transparent;
@@ -432,6 +433,8 @@ a {
 
 .results-content {
   margin: 0 auto;
+  overflow: auto;
+  width: 700px;
 
   .listing {
     float: left;
@@ -493,13 +496,185 @@ a {
 
 }
 
+.related {
+  clear: both;
+  font-size: 14px;
+  color: black;
+  width: 700px;
+
+  > span:first-child {
+    display: block;
+  }
+
+  ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 15px;
+    line-height: 24px;
+  }
+
+    .related-shops {
+      clear: both;
+      margin-top: 15px;
+      color: $link-color;
+
+      > span {
+        color: black;
+      }
+    }
+}
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-bottom: 50px;
+
+  > span, a span {
+    color: black;
+  }
+
+  .icon {
+      border-radius: 50%;
+      background-color: $link-color;
+      color: white;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+  }
+  > div {
+    margin-top: 15px;
+  }
+    .i-left {
+    position: relative;
+    display: inline-block;
+       &:after {
+      content: "◃";
+      position: absolute;
+      top: 5px;
+      left: 7px;
+    }
+  }
+  
+  .i-right {
+    position: relative;
+    display: inline-block;
+    transform: rotate(180deg);
+    &:after {
+      content: "◃";
+      position: absolute;
+      top: 7px;
+      left: 7px;
+    }
+    }
+  }
 
 
 
+.footer-container {
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.footer {
+  margin: 0 auto;
+  overflow: auto;
+  width: 1000px;
+  line-height: 24px;
+  padding: 0 50px;
+
+  > div {
+    display: block;
+    float: left;
+    margin-top: 12px;
+    color: black;
+    > span, > button, > span a{
+      display: block;
+     }
+
+     > button {
+       background-color: RGB(102, 183, 209);
+       color: white;
+       font-weight: bold;
+       border-radius: 3px;
+       border: 1px solid RGB(102, 183, 209);
+
+       &:hover {
+        background-color: $link-color;
+       }
+     }
+  }
+
+  ul {
+    display: block;
+    float: left;
+    list-style: none;
+  }
+
+  .footer-2 {
+    clear: left;
+    display: inline-block;
+    border-top: 1px solid lightgray;
+    font-size: 0;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+
+    > div, button {
+      display: inline-block;
+      font-size: 12px;
+    }
 
 
+    > div {
+      margin: 5px 0;
+      padding: 5px 10px;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      border-left: 1px solid lightgray;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+      }
+
+      &:nth-child(3) {
+        border-right: 1px solid lightgray;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+      > button {
+        margin-left: 30px;
+        padding: 5px 20px;
+      }
+
+    > .copywrite {
+      font-size: 10px;
+      color: $text-color;
+      display: block;
+      padding-left: 0;
+      float: none;
+      > li {
+        display: inline;
+        padding-left: 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
 
 
+  }
 
+
+  
+}
 
 
