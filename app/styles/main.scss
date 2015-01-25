@@ -605,6 +605,7 @@ a {
   width: 1000px;
   line-height: 24px;
   padding: 0 50px;
+  font-size: 14px;
 
   > div {
     display: block;
@@ -621,6 +622,7 @@ a {
        font-weight: bold;
        border-radius: 3px;
        border: 1px solid RGB(102, 183, 209);
+       margin-bottom: 10px;
 
        &:hover {
         background-color: $link-color;
@@ -633,6 +635,14 @@ a {
     float: left;
     list-style: none;
   }
+
+.social {
+  color: $link-color;
+  li a {
+    padding-left: 5px;
+  }
+}
+
 
   .footer-2 {
     clear: left;
