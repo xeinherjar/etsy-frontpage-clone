@@ -1,6 +1,8 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+$fa-font-path: '../../bower_components/font-awesome/fonts';
+@import '../../bower_components/font-awesome/scss/font-awesome';
 
 // Custom Styles
 $text-color: RGB(102, 102, 102);
@@ -156,6 +158,23 @@ a {
       font-size: 14px;
       margin-right: 5px;
       margin-left: 5px;
+    }
+   
+    .cart {
+      font-size: 24px;
+      color: $text-color;
+      border-left: 1px solid lightgray;
+      padding-left: 12px;
+      vertical-align: middle;
+      &:hover {
+        color: black;
+      }
+      &:after {
+        content: "Cart";
+        font-size: 12px;
+        margin-top: 5px;
+        display: block;
+      }
     }
   }
 
