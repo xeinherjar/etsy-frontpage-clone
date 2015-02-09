@@ -1,3 +1,17 @@
-## Etsyish clone. 
+## Homework 009
+An Etsyish clone. 
 
-Homework 009.
+Tools:
+    SASS
+    gulp
+    bower
+    jQuery
+    underscore
+    font-awesome
+
+To build:
+    npm install
+    bower install
+    gulp build
+
+License: MIT
