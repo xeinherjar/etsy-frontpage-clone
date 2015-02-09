@@ -2,16 +2,16 @@
 An Etsyish clone. 
 
 Tools:
-    SASS
-    gulp
-    bower
-    jQuery
-    underscore
-    font-awesome
+- SASS
+- gulp
+- bower
+- jQuery
+- underscore
+- font-awesome
 
 To build:
-    npm install
-    bower install
-    gulp build
+- `npm install`
+- `bower install`
+- `gulp build`
 
 License: MIT
